@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Hidden from "./Hidden";
+import Link from "next/link";
 
 interface ImgProps {
   name: string;
@@ -8,9 +9,10 @@ interface ImgProps {
   img2: string;
   img3: string;
   img4: string;
+  link: string;
 }
 
-const PortraitDisplay = ({ name, img1, img2, img3, img4 }: ImgProps) => {
+const PortraitDisplay = ({ name, img1, img2, img3, img4, link }: ImgProps) => {
   return (
     <>
       <div className="container">
@@ -64,6 +66,11 @@ const PortraitDisplay = ({ name, img1, img2, img3, img4 }: ImgProps) => {
             unoptimized={true}
             alt=""
           />
+          {link && (
+            <Link href={`${link}`}>
+              <p className="link">Images</p>
+            </Link>
+          )}
         </div>
       </div>
       <style jsx>
@@ -102,6 +109,16 @@ const PortraitDisplay = ({ name, img1, img2, img3, img4 }: ImgProps) => {
           .img4 {
             grid-area: img4;
             overflow: hidden;
+            position: relative;
+          }
+          .link {
+            position: absolute;
+            bottom: 1.5rem;
+            color: #fff;
+            right: 1rem;
+          }
+          .link:hover {
+            cursor: pointer;
           }
 
           @media only screen and (max-width: 2000px) {

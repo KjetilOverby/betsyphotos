@@ -16,6 +16,7 @@ const portrait = () => {
           img2="https://lh3.googleusercontent.com/pw/AL9nZEWvadhXKIOci-p4vUxlxS6ZAw3p93NmlBvcjWqEWp2NotxzyiHL5l5-W570c1Nx4nUfVoU7LCYscEejNoSEqM_UFFnrPKesszuyHuJ6LEP7RGD-XMoqmrAs3Xg5ufVBgfjAgGDNnIfHWCjCh-6P4V0=w1280-h853-no?authuser=0"
           img3="https://lh3.googleusercontent.com/pw/AL9nZEXyGwSMKvZQ0nLBpsP_oWv-phi7QbkBcKWr0tpaWoxjAa1AS0erbnZu7-9bqqsJIcmqwjvkGoINNNViQt72SeUmKCBdHaxGpXOM4fqOglETCy0B-_Vx_-QMudzR5_RdrdxBiQvL1SvC8ucFHvMIskY=w1280-h853-no?authuser=0"
           img4="https://lh3.googleusercontent.com/pw/AL9nZEUbljkSxHY0zkaMH7Mq9j_kvWCtFtauQcl87DFWov88u4-gd6wutpcWOvBkJjorhfdO70EbYqsy4qi2bBOrSU8f4ZDXzpgCm297a8FT4wXZuctT4fKJK4WA81fXhIV84cY9IMxTQTZHpGw0NFZ6Qv0=w1280-h853-no?authuser=0"
+          link="/portrait/jasper"
         />
         <PortraitDisplay
           name="Gemma Holter"

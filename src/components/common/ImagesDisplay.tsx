@@ -131,7 +131,7 @@ const ImagesDisplay = () => {
           .container {
             display: grid;
             width: 100vw;
-            grid-template-columns: 18% 18% 1fr 18% 18%;
+            grid-template-columns: 17% 18% 1fr 18% 18%;
             grid-template-rows: 20% 20% 20% 20% 20%;
             height: 120vh;
             grid-template-areas:
@@ -141,7 +141,7 @@ const ImagesDisplay = () => {
               "img9 img9 img10 img6 img8"
               "img9 img9 img10 img6 img12";
             grid-gap: 1rem;
-            padding: 1rem 18rem;
+            padding: 1rem 10rem;
           }
           .img-container {
             position: relative;
