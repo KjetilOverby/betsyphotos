@@ -9,7 +9,7 @@ interface ImgProps {
   img2: string;
   img3: string;
   img4: string;
-  link: string;
+  link?: string;
 }
 
 const PortraitDisplay = ({ name, img1, img2, img3, img4, link }: ImgProps) => {
