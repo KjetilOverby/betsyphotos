@@ -46,7 +46,7 @@ const PersonInfoComponent = () => {
               nisi. Obcaecati sint aliquid nobis.
             </p>
           </div>
-          <div>
+          <div className="img-container">
             <Image
               layout="intrinsic"
               src={jasper3}
@@ -96,6 +96,7 @@ const PersonInfoComponent = () => {
           .text {
             color: lightgrey;
             font-size: 1.2rem;
+            margin-bottom: 1rem;
           }
           .text-container {
             padding: 1rem 1rem 0 0;
@@ -108,6 +109,28 @@ const PersonInfoComponent = () => {
           @media only screen and (max-width: 2000px) {
             .content-container {
               margin: 0 15rem;
+            }
+          }
+          @media only screen and (max-width: 756px) {
+            .content-container {
+              margin: 0 0.5rem;
+              display: grid;
+              grid-template-columns: 1fr;
+              overflow: hidden;
+            }
+            .img-container {
+              width: 100vw;
+            }
+            .name {
+              font-family: "Cinzel", serif;
+              font-size: 3rem;
+              color: #fff;
+            }
+            .name2 {
+              margin-left: 4rem;
+            }
+            .name3 {
+              margin-left: 8rem;
             }
           }
         `}

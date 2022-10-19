@@ -3,6 +3,7 @@ import BetsyLogo from "../src/components/common/BetsyLogo";
 import FooterComponent from "../src/components/common/FooterComponent";
 import HeaderComponent from "../src/components/common/HeaderComponent";
 import PortraitDisplay from "../src/components/common/PortraitDisplay";
+import jasperData from "../src/imagesdata/jasper";
 
 const portrait = () => {
   return (
@@ -11,12 +12,19 @@ const portrait = () => {
         <BetsyLogo />
         <HeaderComponent />
         <PortraitDisplay
-          name="Jasper Ramos Barcena"
-          img1="https://lh3.googleusercontent.com/pw/AL9nZEUjCgEfKLnRPOwAsgOBApoSwjTxpeDlKUFH4e06MuBcrXi5r-VBp2ZP9xkLHbB2qVdBvpgm3yV5yng7_Qc1FHR-zIJJ_rXRq24MJSO84xJu-slx-YxLaCNecGqH5nLtFoRBT_41R0YLdRjFKjWH6ZU=w853-h1280-no?authuser=0"
-          img2="https://lh3.googleusercontent.com/pw/AL9nZEWvadhXKIOci-p4vUxlxS6ZAw3p93NmlBvcjWqEWp2NotxzyiHL5l5-W570c1Nx4nUfVoU7LCYscEejNoSEqM_UFFnrPKesszuyHuJ6LEP7RGD-XMoqmrAs3Xg5ufVBgfjAgGDNnIfHWCjCh-6P4V0=w1280-h853-no?authuser=0"
-          img3="https://lh3.googleusercontent.com/pw/AL9nZEXyGwSMKvZQ0nLBpsP_oWv-phi7QbkBcKWr0tpaWoxjAa1AS0erbnZu7-9bqqsJIcmqwjvkGoINNNViQt72SeUmKCBdHaxGpXOM4fqOglETCy0B-_Vx_-QMudzR5_RdrdxBiQvL1SvC8ucFHvMIskY=w1280-h853-no?authuser=0"
-          img4="https://lh3.googleusercontent.com/pw/AL9nZEUbljkSxHY0zkaMH7Mq9j_kvWCtFtauQcl87DFWov88u4-gd6wutpcWOvBkJjorhfdO70EbYqsy4qi2bBOrSU8f4ZDXzpgCm297a8FT4wXZuctT4fKJK4WA81fXhIV84cY9IMxTQTZHpGw0NFZ6Qv0=w1280-h853-no?authuser=0"
-          link="/portrait/jasper"
+          name={jasperData.name}
+          img1={jasperData.portraitImages[0].url}
+          img2={jasperData.portraitImages[1].url}
+          img3={jasperData.portraitImages[2].url}
+          img4={jasperData.portraitImages[3].url}
+          link={jasperData.link}
+        />
+        <PortraitDisplay
+          name="Charisse Anne Labao"
+          img1="https://lh3.googleusercontent.com/pw/AL9nZEXCxpa8EB4j5i3Sjry_LocIX8TuujaAVZ2sjvH0_piv6l5DZKfJR4vH6u4wEvZrOCmtdDYpOTKGvrTzFTivKJIOJiUd7DbXiTtcUdq5bolW6xBf0yvtQW8LJ_y3M-TN0NOS00cMRZ6qpPY5OpH6kWU=w1280-h1920-no?authuser=0"
+          img2="https://lh3.googleusercontent.com/pw/AL9nZEUqSk8YcIA_8uDUuvRtXcDMrtSP1dQSf_Nu8fofKPhjTlcQ_2buKoCpncmT6EF_fd5A2PC25RTzUk8OVfkpyaejgvU07fEwXkRASOqud4dTWubd66LkSv98Uv4wSxlvl5HN_bVN3ZfacHC1vAFoH7o=w1920-h1280-no?authuser=0"
+          img3="https://lh3.googleusercontent.com/pw/AL9nZEWz88jcfHqhnqd45DraeLUPMvB-YplcasQZCPHWxkCTiMRCe_iw2PPMYDBtauavi05U7EvYfMF0UJRVJpi36mrQDl6ydAtchoBs5SlNRt3S4CbihjtpHSqZn_-jkZX46HAy8i72M1f_C4ob2sf5d7g=w1920-h1280-no?authuser=0"
+          img4="https://lh3.googleusercontent.com/pw/AL9nZEUVdn5CIdieRF0Gez0FO9zDbC0GdzFasaQ_JVG_osZZq406ItU4EdPoWPz8TwXtCiuip4nZTcmQr2RfBnnuflRe3WBLBgb4XZCbI2kNcLsOGq3U7o6gcNCdqq49luhiFk-pEqp7PTfsJ_aAa2HRkuk=w1920-h1153-no?authuser=0"
         />
         <PortraitDisplay
           name="Gemma Holter"

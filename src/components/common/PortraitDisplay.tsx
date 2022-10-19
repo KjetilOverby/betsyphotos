@@ -173,6 +173,9 @@ const PortraitDisplay = ({ name, img1, img2, img3, img4, link }: ImgProps) => {
               font-size: 1.5rem;
               margin-left: 0.5rem;
             }
+            .link {
+              bottom: 12rem;
+            }
           }
         `}
       </style>

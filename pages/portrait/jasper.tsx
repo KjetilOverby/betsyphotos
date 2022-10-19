@@ -4,6 +4,7 @@ import BetsyLogo from "../../src/components/common/BetsyLogo";
 import HeaderComponent from "../../src/components/common/HeaderComponent";
 import PersonInfoComponent from "../../src/components/common/PersonInfoComponent";
 import ImagesDisplay from "../../src/components/common/ImagesDisplay";
+import jasperData from "../../src/imagesdata/jasper";
 
 const jasper = () => {
   return (
@@ -17,7 +18,7 @@ const jasper = () => {
         <BetsyLogo />
         <HeaderComponent />
         <PersonInfoComponent />
-        <ImagesDisplay />
+        <ImagesDisplay data={jasperData} />
       </div>
       <style jsx>
         {`
