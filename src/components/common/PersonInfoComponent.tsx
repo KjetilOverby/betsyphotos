@@ -3,13 +3,13 @@ import Image from "next/image";
 
 const PersonInfoComponent = () => {
   const jasper2 =
-    "https://lh3.googleusercontent.com/pw/AL9nZEUbljkSxHY0zkaMH7Mq9j_kvWCtFtauQcl87DFWov88u4-gd6wutpcWOvBkJjorhfdO70EbYqsy4qi2bBOrSU8f4ZDXzpgCm297a8FT4wXZuctT4fKJK4WA81fXhIV84cY9IMxTQTZHpGw0NFZ6Qv0=w1280-h853-no?authuser=0";
+    "https://lh3.googleusercontent.com/pw/AL9nZEVL3hZdZgNL2zeSV6HLQrzpELXcF_JML2p_QOWdWDtQjGIeFseYRWaTNI_scp7VpN-ckTeReg_IL8kurZg10Fes6aEQBQBp2bTwEHbtS0tDRxSRA3sJYhU0zTqKicT59jUxBv_cBRjvM9DtMrzMW6Cn=w5076-h3384-no?authuser=0";
 
   const jasper3 =
     "https://lh3.googleusercontent.com/pw/AL9nZEWvadhXKIOci-p4vUxlxS6ZAw3p93NmlBvcjWqEWp2NotxzyiHL5l5-W570c1Nx4nUfVoU7LCYscEejNoSEqM_UFFnrPKesszuyHuJ6LEP7RGD-XMoqmrAs3Xg5ufVBgfjAgGDNnIfHWCjCh-6P4V0=w1280-h853-no?authuser=0";
   return (
     <>
-      <div className="container">
+      {/* <div className="container">
         <div className="content-container content1">
           <div className="img-container">
             <Image
@@ -58,6 +58,10 @@ const PersonInfoComponent = () => {
             />
           </div>
         </div>
+      </div> */}
+
+      <div className="container">
+        <h1 className="name">Jasper Ramos Barcena</h1>
       </div>
       <style jsx>
         {`
@@ -69,7 +73,7 @@ const PersonInfoComponent = () => {
           .content-container {
             margin: 0 45rem;
             display: grid;
-            grid-template-columns: 1fr 55rem;
+            grid-template-columns: 1fr 60%;
             overflow: hidden;
           }
           .content1 {
@@ -83,6 +87,7 @@ const PersonInfoComponent = () => {
             font-family: "Cinzel", serif;
             font-size: 6rem;
             color: #fff;
+            margin-left: 2rem;
           }
           .name2 {
             margin-left: 10rem;
@@ -111,7 +116,13 @@ const PersonInfoComponent = () => {
               margin: 0 15rem;
             }
           }
-          @media only screen and (max-width: 756px) {
+          @media only screen and (max-width: 1500px) {
+            .content-container {
+              margin: 0 2rem;
+            }
+          }
+
+          @media only screen and (max-width: 1000px) {
             .content-container {
               margin: 0 0.5rem;
               display: grid;

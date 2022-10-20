@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import jasperData from "../../imagesdata/jasper";
 import { Url } from "url";
+import SingleImgDisplay from "./SingleImgDisplay";
 
 interface DataProps {
   data: {
@@ -14,12 +15,26 @@ interface DataProps {
 
 type dataProps = DataProps[];
 const ImagesDisplay = ({ data }: DataProps) => {
+  const [imgUrl, setImgUrl] = useState<string>("");
+  const [openSingleImg, setOpenSingleImg] = useState<boolean>(false);
+
   return (
     <>
+      {openSingleImg && (
+        <SingleImgDisplay imgUrl={imgUrl} setOpenSingleImg={setOpenSingleImg} />
+      )}
       <div className="container">
         {data.imageData.map((item) => {
+          const openSingleImgHandler = () => {
+            setImgUrl(item.url);
+            setOpenSingleImg(true);
+          };
           return (
-            <div key={item.url} className={`img-container ${item.class}`}>
+            <div
+              onClick={openSingleImgHandler}
+              key={item.url}
+              className={`img-container ${item.class}`}
+            >
               <Image
                 layout="fill"
                 src={item.url}
@@ -45,8 +60,9 @@ const ImagesDisplay = ({ data }: DataProps) => {
               "img4 img4 img3 img6 img7"
               "img9 img9 img10 img6 img8"
               "img9 img9 img10 img6 img12";
-            grid-gap: 1rem;
-            padding: 1rem 10rem;
+         
+            padding: 1rem 0 0 2rem;
+            gap: 1rem
           }
           .img-container {
             position: relative;
