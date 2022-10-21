@@ -3,6 +3,7 @@ import Image from "next/image";
 import { SlArrowLeft } from "react-icons/sl";
 import { SlArrowRight } from "react-icons/sl";
 import useArrowKeys from "use-arrow-keys";
+import { useSwipeable } from "react-swipeable";
 
 interface SingleImgProps {
   imgUrl: string;
@@ -28,20 +29,26 @@ const SingleImgDisplay = ({
   const onRightKey = () => changeImg();
   const onLeftKey = () => changeImgBack();
   useArrowKeys({ onRightKey, onLeftKey });
+
+  const handlers = useSwipeable({
+    onSwipedRight: (eventData) => changeImgBack(),
+    onSwipedLeft: (eventData) => changeImg(),
+  });
+
   return (
     <>
-      <div onKeyPress={handleKeyPress} className="container">
+      <div {...handlers} onKeyPress={handleKeyPress} className="container">
         <p onClick={() => setOpenSingleImg(false)} className="closeBtn">
           CLOSE
         </p>
-        <div className="arrow-container">
+        {/* <div className="arrow-container">
           <div onClick={changeImgBack} className="">
             <SlArrowLeft />
           </div>
           <div onClick={changeImg} className="">
             <SlArrowRight />
           </div>
-        </div>
+        </div> */}
 
         {/* <div
           onClick={() => setColor("white")}
@@ -94,6 +101,7 @@ const SingleImgDisplay = ({
           }
           .img-container {
             height: 100vh;
+            animation: rollIn 1s;
           }
           .closeBtn {
             color: white;
@@ -128,6 +136,19 @@ const SingleImgDisplay = ({
           .dot-lightblue {
             background: lightblue;
             top: 12rem;
+          }
+          @-webkit-keyframes rollIn {
+            0% {
+              opacity: 0;
+              -webkit-transform: translate3d(-100%, 0, 0)
+                rotate3d(0, 0, 1, -120deg);
+              transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+            }
+            100% {
+              opacity: 1;
+              -webkit-transform: none;
+              transform: none;
+            }
           }
         `}
       </style>
