@@ -1,8 +1,17 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import "../styles/globals.css";
+import React, { useState } from "react";
+import type { AppProps } from "next/app";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  const [modelName, setModelName] = useState("Charisse");
+
+  return (
+    <Component
+      {...pageProps}
+      modelName={modelName}
+      setModelName={setModelName}
+    />
+  );
 }
 
-export default MyApp
+export default MyApp;

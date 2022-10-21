@@ -10,9 +10,18 @@ interface ImgProps {
   img3: string;
   img4: string;
   link?: string;
+  func?: () => void;
 }
 
-const PortraitDisplay = ({ name, img1, img2, img3, img4, link }: ImgProps) => {
+const PortraitDisplay = ({
+  name,
+  img1,
+  img2,
+  img3,
+  img4,
+  link,
+  func,
+}: ImgProps) => {
   return (
     <>
       <div className="container">
@@ -68,7 +77,9 @@ const PortraitDisplay = ({ name, img1, img2, img3, img4, link }: ImgProps) => {
           />
           {link && (
             <Link href={`${link}`}>
-              <p className="link">Images</p>
+              <p onClick={func} className="link">
+                Images
+              </p>
             </Link>
           )}
         </div>

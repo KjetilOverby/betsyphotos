@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import jasperData from "../../imagesdata/jasper";
 import { Url } from "url";
 import SingleImgDisplay from "./SingleImgDisplay";
 
@@ -18,7 +17,7 @@ const ImagesDisplay = ({ data }: DataProps) => {
   const [imgUrl, setImgUrl] = useState<string>("");
   const [openSingleImg, setOpenSingleImg] = useState<boolean>(false);
 
-  const imgUrls = jasperData.imageData.map((item) => item.url);
+  const imgUrls = data.imageData.map((item) => item.url);
   const [imgCount, setImgCount] = useState(0);
 
   const changeImg = () => {

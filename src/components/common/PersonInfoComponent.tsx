@@ -1,12 +1,11 @@
 import React from "react";
 import Image from "next/image";
 
-const PersonInfoComponent = () => {
-  const jasper2 =
-    "https://lh3.googleusercontent.com/pw/AL9nZEVL3hZdZgNL2zeSV6HLQrzpELXcF_JML2p_QOWdWDtQjGIeFseYRWaTNI_scp7VpN-ckTeReg_IL8kurZg10Fes6aEQBQBp2bTwEHbtS0tDRxSRA3sJYhU0zTqKicT59jUxBv_cBRjvM9DtMrzMW6Cn=w5076-h3384-no?authuser=0";
+interface NameProps {
+  name: string;
+}
 
-  const jasper3 =
-    "https://lh3.googleusercontent.com/pw/AL9nZEWvadhXKIOci-p4vUxlxS6ZAw3p93NmlBvcjWqEWp2NotxzyiHL5l5-W570c1Nx4nUfVoU7LCYscEejNoSEqM_UFFnrPKesszuyHuJ6LEP7RGD-XMoqmrAs3Xg5ufVBgfjAgGDNnIfHWCjCh-6P4V0=w1280-h853-no?authuser=0";
+const PersonInfoComponent = ({ name }: NameProps) => {
   return (
     <>
       {/* <div className="container">
@@ -61,7 +60,7 @@ const PersonInfoComponent = () => {
       </div> */}
 
       <div className="container">
-        <h1 className="name">Jasper Ramos Barcena</h1>
+        <h1 className="name">{name}</h1>
       </div>
       <style jsx>
         {`

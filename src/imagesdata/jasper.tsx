@@ -1,6 +1,6 @@
 const jasperData = {
   name: "Jasper Ramos Barcena",
-  link: "/portrait/jasper",
+  link: "/portrait/models",
   portraitImages: [
     {
       url: "https://lh3.googleusercontent.com/pw/AL9nZEUjCgEfKLnRPOwAsgOBApoSwjTxpeDlKUFH4e06MuBcrXi5r-VBp2ZP9xkLHbB2qVdBvpgm3yV5yng7_Qc1FHR-zIJJ_rXRq24MJSO84xJu-slx-YxLaCNecGqH5nLtFoRBT_41R0YLdRjFKjWH6ZU=w853-h1280-no?authuser=0",
