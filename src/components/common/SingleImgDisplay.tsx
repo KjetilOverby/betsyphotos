@@ -1,13 +1,27 @@
 import React, { useState } from "react";
 import Image from "next/image";
-
+import { SlArrowLeft } from "react-icons/sl";
+import { SlArrowRight } from "react-icons/sl";
 interface SingleImgProps {
   imgUrl: string;
   setOpenSingleImg: (openSingleImg: boolean) => void;
+  changeImg: () => void;
+  changeImgBack: () => void;
 }
 
-const SingleImgDisplay = ({ setOpenSingleImg, imgUrl }: SingleImgProps) => {
+const SingleImgDisplay = ({
+  setOpenSingleImg,
+  imgUrl,
+  changeImg,
+  changeImgBack,
+}: SingleImgProps) => {
   const [color, setColor] = useState("black");
+
+  const handleKeyPress = (e: any) => {
+    if (e.key === "ArrowDown") {
+      alert("working");
+    }
+  };
 
   return (
     <>
@@ -15,7 +29,17 @@ const SingleImgDisplay = ({ setOpenSingleImg, imgUrl }: SingleImgProps) => {
         <p onClick={() => setOpenSingleImg(false)} className="closeBtn">
           CLOSE
         </p>
-        <div
+        <div className="arrow-container">
+          <div onClick={changeImgBack} className="">
+            <SlArrowLeft />
+          </div>
+          <div onClick={changeImg} className="">
+            <SlArrowRight />
+          </div>
+          <input onKeyPress={handleKeyPress} />
+        </div>
+
+        {/* <div
           onClick={() => setColor("white")}
           className="dot-btn dot-white"
         ></div>
@@ -30,7 +54,7 @@ const SingleImgDisplay = ({ setOpenSingleImg, imgUrl }: SingleImgProps) => {
         <div
           onClick={() => setColor("lightblue")}
           className="dot-btn dot-lightblue"
-        ></div>
+        ></div> */}
         <div className="img-container">
           <Image
             layout="fill"
@@ -45,11 +69,21 @@ const SingleImgDisplay = ({ setOpenSingleImg, imgUrl }: SingleImgProps) => {
       </div>
       <style jsx>
         {`
+          .arrow-container {
+            display: grid;
+            z-index: 2001;
+            position: absolute;
+            top: 4rem;
+            left: 2rem;
+            width: 4rem;
+            grid-template-columns: 1fr 1fr;
+            color: #fff;
+          }
           .container {
             position: fixed;
             width: 100vw;
             height: 100vh;
-            background: ${color};
+            background: black;
             top: 0;
             left: 0;
             z-index: 1000;

@@ -60,13 +60,10 @@ const jasperData = {
       url: "https://lh3.googleusercontent.com/pw/AL9nZEVTBjTbLtd-Mx4ARVcX_EAnawCD5npGI21xlJNEKYEEJWJd90bxneRo08a-HQhtZEeNUfktaepY2a7MyDGYts2ylA-OzWYDNeu0xhjwcStaV9erYVTiB8eRTQzRGFNRYSscFqsGi5PUSH7MfRNNRMEW=w5076-h3384-no?authuser=0",
       class: "img10",
     },
-    {
-      url: "https://images.unsplash.com/photo-1612942243241-fec73684bb64?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=5184&q=80",
-      class: "img11",
-    },
+
     {
       url: "https://lh3.googleusercontent.com/pw/AL9nZEXPCTpO2DrFvfjPAalzhLPwr1chiSBeMBW-euwxI62JXhzyDcZ3MrKBwz2ssK3loGC_4wubXvZQ5CUr4ZM7irAcwZmQCM4pbBqY1ciWtat2UU-eV8mJzUxCvoAj60FsJJxT8n7i5WQFxtXsHsfInI4v=w5076-h3384-no?authuser=0",
-      class: "img12",
+      class: "img11",
     },
   ],
 };

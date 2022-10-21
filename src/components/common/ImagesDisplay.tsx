@@ -18,10 +18,37 @@ const ImagesDisplay = ({ data }: DataProps) => {
   const [imgUrl, setImgUrl] = useState<string>("");
   const [openSingleImg, setOpenSingleImg] = useState<boolean>(false);
 
+  const imgUrls = jasperData.imageData.map((item) => item.url);
+  const [imgCount, setImgCount] = useState(0);
+
+  const changeImg = () => {
+    setImgCount(imgCount + 1);
+  };
+  const changeImgBack = () => {
+    setImgCount(imgCount - 1);
+  };
+
+  useEffect(() => {
+    setImgUrl(imgUrls[imgCount]);
+  }, [imgCount, imgUrls]);
+
+  useEffect(() => {
+    if (imgCount >= 11) {
+      setImgCount(0);
+    } else if (imgCount < 0) {
+      setImgCount(12);
+    }
+  }, [imgCount]);
+
   return (
     <>
       {openSingleImg && (
-        <SingleImgDisplay imgUrl={imgUrl} setOpenSingleImg={setOpenSingleImg} />
+        <SingleImgDisplay
+          changeImg={changeImg}
+          changeImgBack={changeImgBack}
+          imgUrl={imgUrl}
+          setOpenSingleImg={setOpenSingleImg}
+        />
       )}
       <div className="container">
         {data.imageData.map((item) => {
@@ -29,6 +56,7 @@ const ImagesDisplay = ({ data }: DataProps) => {
             setImgUrl(item.url);
             setOpenSingleImg(true);
           };
+
           return (
             <div
               onClick={openSingleImgHandler}
@@ -59,9 +87,9 @@ const ImagesDisplay = ({ data }: DataProps) => {
               "img4 img4 img3 img5 img5"
               "img4 img4 img3 img6 img7"
               "img9 img9 img10 img6 img8"
-              "img9 img9 img10 img6 img12";
+              "img9 img9 img10 img6 img11";
          
-            padding: 1rem 0 0 2rem;
+            padding: 1rem 0;
             gap: 1rem
           }
           .img-container {
