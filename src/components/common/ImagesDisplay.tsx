@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { Url } from "url";
 import SingleImgDisplay from "./SingleImgDisplay";
+import FooterComponent from "./FooterComponent";
 
 interface DataProps {
   data: {
@@ -72,6 +73,7 @@ const ImagesDisplay = ({ data }: DataProps) => {
             </div>
           );
         })}
+        <FooterComponent />
       </div>
       <style jsx>
         {`
@@ -89,7 +91,7 @@ const ImagesDisplay = ({ data }: DataProps) => {
               "img9 img9 img10 img6 img11";
          
             padding: 1rem 0;
-            gap: 1rem
+            gap: .5rem
           }
           .img-container {
             position: relative;
