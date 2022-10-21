@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { SlArrowLeft } from "react-icons/sl";
 import { SlArrowRight } from "react-icons/sl";
+import useArrowKeys from "use-arrow-keys";
+
 interface SingleImgProps {
   imgUrl: string;
   setOpenSingleImg: (openSingleImg: boolean) => void;
@@ -18,14 +20,17 @@ const SingleImgDisplay = ({
   const [color, setColor] = useState("black");
 
   const handleKeyPress = (e: any) => {
-    if (e.key === "ArrowDown") {
+    if (e.key === "Enter") {
       alert("working");
     }
   };
 
+  const onRightKey = () => changeImg();
+  const onLeftKey = () => changeImgBack();
+  useArrowKeys({ onRightKey, onLeftKey });
   return (
     <>
-      <div className="container">
+      <div onKeyPress={handleKeyPress} className="container">
         <p onClick={() => setOpenSingleImg(false)} className="closeBtn">
           CLOSE
         </p>
@@ -36,7 +41,6 @@ const SingleImgDisplay = ({
           <div onClick={changeImg} className="">
             <SlArrowRight />
           </div>
-          <input onKeyPress={handleKeyPress} />
         </div>
 
         {/* <div
