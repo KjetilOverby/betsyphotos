@@ -3,7 +3,7 @@ const christyData = {
   link: "/portrait/models",
   portraitImages: [
     {
-      url: "https://lh3.googleusercontent.com/pw/AL9nZEUMR9leDblbuRjcidwusIV0V1RaPqZec3hrLwgkxdtUsQ4K-348CAXDhUcRIl-vwpqPyImav3ibqHqCP2TjlxqtRW2WvxdZ9F3ThgXsUvsKBwF_lR0capLXmkbpUHZQHg05X70_16vKIc6-2XXxXiKX=w720-h1080-no?authuser=0",
+      url: "https://lh3.googleusercontent.com/pw/AL9nZEXRo8x34gzdecWp2I4cWZNkEC5trZr-N_-tj6E0ybrJgAECrm1xFWjfFvg_Dca_U5H4rEu17-akm9L8I9J3dV86Q4WoUoSjCBWZUpi3LB4llsGq3-mMpyZlug5bFVvmR3Eso20zvPmmJOF4lh29vohg=w720-h1080-no?authuser=0",
       class: "img1",
     },
     {
@@ -29,7 +29,7 @@ const christyData = {
       class: "img2",
     },
     {
-      url: "https://lh3.googleusercontent.com/pw/AL9nZEUJwKKKU46cJjgIXPhw31Xq4ZeTFSYfeQEd4Pc5M2mXMRkwOa6ArR1nGOOGdZ7SDDFf-HlRG76TztsOCiG_Q7ly-theGkNxjbUNXblrSKx0ZT7OtjzB-iKFRyZUpFPc8D1gQfcIxbLnu83jgmHTX807=w720-h1080-no?authuser=0",
+      url: "https://lh3.googleusercontent.com/pw/AL9nZEUQZyXinRsczx_S93Ay5lxbbAmPnVjcqk_LkmIruKRj-OS8-V_HHkaobx4-D6iqCWuYZ5NznKUdkSUwxaZeJxyxTFfuQ9LwsNb8bpFUJWFwC6LhR3wAktX7FThm4YHTMx8QW6IHys2PfDE_KMXIzuhI=w720-h1080-no?authuser=0",
       class: "img3",
     },
     {
