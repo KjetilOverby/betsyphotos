@@ -6,6 +6,7 @@ import PersonInfoComponent from "../../src/components/common/PersonInfoComponent
 import ImagesDisplay from "../../src/components/common/ImagesDisplay";
 import jasperData from "../../src/imagesdata/jasper";
 import charisseData from "../../src/imagesdata/charisseData";
+import christyData from "../../src/imagesdata/christy";
 
 interface modelProps {
   modelName: string;
@@ -22,8 +23,12 @@ const Modelpage = ({ modelName }: modelProps) => {
     } else if (modelName === "Charisse") {
       setModel(charisseData);
       setName(model.name);
+    } else if (modelName === "Christy") {
+      setModel(christyData);
+      setName(model.name);
     }
   }, [model.name, modelName]);
+  console.log(model);
 
   return (
     <>

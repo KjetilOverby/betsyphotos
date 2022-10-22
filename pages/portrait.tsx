@@ -5,6 +5,7 @@ import HeaderComponent from "../src/components/common/HeaderComponent";
 import PortraitDisplay from "../src/components/common/PortraitDisplay";
 import jasperData from "../src/imagesdata/jasper";
 import charisseData from "../src/imagesdata/charisseData";
+import christyData from "../src/imagesdata/christy";
 
 interface PortraitProps {
   setModelName: (modelName: string) => void;
@@ -33,6 +34,15 @@ const portrait = ({ setModelName }: PortraitProps) => {
           img4={charisseData.portraitImages[3].url}
           link="/portrait/models"
           func={() => setModelName("Charisse")}
+        />
+        <PortraitDisplay
+          name={christyData.name}
+          img1={christyData.portraitImages[0].url}
+          img2={christyData.portraitImages[1].url}
+          img3={christyData.portraitImages[2].url}
+          img4={christyData.portraitImages[3].url}
+          link="/portrait/models"
+          func={() => setModelName("Christy")}
         />
         <PortraitDisplay
           name="Gemma Holter"
