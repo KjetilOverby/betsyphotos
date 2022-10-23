@@ -6,19 +6,18 @@ import FooterComponent from "./FooterComponent";
 
 interface DataProps {
   data: {
-    name: string;
+    name?: string;
     link?: string;
     portraitImages: { url: string; class: string }[];
     imageData: { url: string; class: string }[];
   };
 }
 
-type dataProps = DataProps[];
-const ImagesDisplay = ({ data }: DataProps) => {
+const ImagesDisplay = ({ data }: any) => {
   const [imgUrl, setImgUrl] = useState<string>("");
   const [openSingleImg, setOpenSingleImg] = useState<boolean>(false);
 
-  const imgUrls = data.imageData.map((item) => item.url);
+  const imgUrls = data.imageData.map((item: any) => item.url);
   const [imgCount, setImgCount] = useState(0);
 
   const changeImg = () => {
@@ -51,7 +50,7 @@ const ImagesDisplay = ({ data }: DataProps) => {
         />
       )}
       <div className="container">
-        {data.imageData.map((item) => {
+        {data.imageData.map((item: any) => {
           const openSingleImgHandler = () => {
             setImgUrl(item.url);
             setOpenSingleImg(true);

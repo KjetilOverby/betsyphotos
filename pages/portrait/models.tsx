@@ -4,43 +4,40 @@ import BetsyLogo from "../../src/components/common/BetsyLogo";
 import HeaderComponent from "../../src/components/common/HeaderComponent";
 import PersonInfoComponent from "../../src/components/common/PersonInfoComponent";
 import ImagesDisplay from "../../src/components/common/ImagesDisplay";
-import jasperData from "../../src/imagesdata/jasper";
-import charisseData from "../../src/imagesdata/charisseData";
-import christyData from "../../src/imagesdata/christy";
+
+import imageData from "../../src/imagesdata/imagedata";
 
 interface modelProps {
-  modelName: string;
+  model: {
+    name: string;
+    link: string;
+    portraitImages?: { url: string; class: string }[];
+    imageData?: { url: string; class: string }[];
+  };
 }
+// interface DataProps {
+//   name: string;
+//   link: string;
+//   portraitImages?: { url: string; class: string }[];
+//   imageData?: { url: string; class: string }[];
+// }
 
-const Modelpage = ({ modelName }: modelProps) => {
-  const [model, setModel] = useState(jasperData);
-  const [name, setName] = useState(model.name);
-
-  useEffect(() => {
-    if (modelName === "Jasper") {
-      setModel(jasperData);
-      setName(model.name);
-    } else if (modelName === "Charisse") {
-      setModel(charisseData);
-      setName(model.name);
-    } else if (modelName === "Christy") {
-      setModel(christyData);
-      setName(model.name);
-    }
-  }, [model.name, modelName]);
-  console.log(model);
+const Modelpage = ({ model }: modelProps) => {
+  // const [model, setModel] = useState<DataProps>(
+  //   imageData.find((item) => item.name === modelName)
+  // );
 
   return (
     <>
       <div className="global-container">
         <Head>
-          <title>Image Chronicles Studios | {name}</title>
+          <title>Image Chronicles Studios | {model.name}</title>
           <meta name="description" content="Images" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <BetsyLogo />
         <HeaderComponent />
-        <PersonInfoComponent name={name} />
+        <PersonInfoComponent name={model} />
         <ImagesDisplay data={model} />
       </div>
       <style jsx>

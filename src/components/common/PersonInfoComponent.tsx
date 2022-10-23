@@ -2,14 +2,16 @@ import React from "react";
 import Image from "next/image";
 
 interface NameProps {
-  name: string;
+  name: {
+    name: string;
+  };
 }
 
 const PersonInfoComponent = ({ name }: NameProps) => {
   return (
     <>
       <div className="container">
-        <h1 className="name">{name}</h1>
+        <h1 className="name">{name.name}</h1>
       </div>
       <style jsx>
         {`
