@@ -147,7 +147,7 @@ const imageData: {
   },
   {
     name: "Christy",
-    color: "rgb(206, 67, 18)",
+    color: "rgb(193, 65, 100)",
     link: "/portrait/models",
     portraitImages: [
       {
@@ -216,7 +216,7 @@ const imageData: {
     ],
   },
   {
-    name: "Kenya",
+    name: "Kenia",
     color: "rgb(137, 09, 13)",
     link: "/portrait/models",
     portraitImages: [

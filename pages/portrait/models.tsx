@@ -5,8 +5,6 @@ import HeaderComponent from "../../src/components/common/HeaderComponent";
 import PersonInfoComponent from "../../src/components/common/PersonInfoComponent";
 import ImagesDisplay from "../../src/components/common/ImagesDisplay";
 
-import imageData from "../../src/imagesdata/imagedata";
-
 interface modelProps {
   model: {
     name: string;
@@ -16,18 +14,8 @@ interface modelProps {
     imageData?: { url: string; class: string }[];
   };
 }
-// interface DataProps {
-//   name: string;
-//   link: string;
-//   portraitImages?: { url: string; class: string }[];
-//   imageData?: { url: string; class: string }[];
-// }
 
 const Modelpage = ({ model }: modelProps) => {
-  // const [model, setModel] = useState<DataProps>(
-  //   imageData.find((item) => item.name === modelName)
-  // );
-
   return (
     <>
       <div className="global-container">
