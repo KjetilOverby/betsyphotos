@@ -4,6 +4,7 @@ import Image from "next/image";
 interface NameProps {
   name: {
     name: string;
+    color: string;
   };
 }
 
@@ -17,7 +18,7 @@ const PersonInfoComponent = ({ name }: NameProps) => {
         {`
           .container {
             margin-top: 5rem;
-            background: rgb(118, 188, 188);
+            background: ${name.color};
             width: 100vw;
           }
           .content-container {

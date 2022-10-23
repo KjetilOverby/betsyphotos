@@ -4,7 +4,7 @@ import type { AppProps } from "next/app";
 import imageData from "../src/imagesdata/imagedata";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const [modelName, setModelName] = useState("Jasper Ramos Barcena");
+  const [modelName, setModelName] = useState("Jasper");
   const [model, setModel] = useState(
     imageData.find((item) => item.name === modelName)
   );

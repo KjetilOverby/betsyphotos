@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Hidden from "./Hidden";
 import Link from "next/link";
+import ChroniclesMark from "./ChroniclesMark";
 
 interface ImgProps {
   name: string;
@@ -78,7 +79,7 @@ const PortraitDisplay = ({
           {link && (
             <Link href={`${link}`}>
               <p onClick={func} className="link">
-                Images
+                <ChroniclesMark />
               </p>
             </Link>
           )}
@@ -141,6 +142,8 @@ const PortraitDisplay = ({
             }
             .header {
               font-size: 2rem;
+            }
+            .link {
             }
           }
           @media only screen and (max-width: 1778px) {

@@ -10,6 +10,7 @@ import imageData from "../../src/imagesdata/imagedata";
 interface modelProps {
   model: {
     name: string;
+    color: string;
     link: string;
     portraitImages?: { url: string; class: string }[];
     imageData?: { url: string; class: string }[];

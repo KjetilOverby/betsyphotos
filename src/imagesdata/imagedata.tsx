@@ -3,9 +3,11 @@ const imageData: {
   link: string;
   portraitImages: { url: string; class: string }[];
   imageData: { url: string; class: string }[];
+  color: string;
 }[] = [
   {
-    name: "Jasper Ramos Barcena",
+    name: "Jasper",
+    color: "rgb(144, 65, 84)",
     link: "/portrait/models",
     portraitImages: [
       {
@@ -74,7 +76,8 @@ const imageData: {
     ],
   },
   {
-    name: "Charisse Anne Labao",
+    name: "Charisse",
+    color: "rgb(0, 128, 140)",
     link: "/portrait/models",
     portraitImages: [
       {
@@ -143,7 +146,8 @@ const imageData: {
     ],
   },
   {
-    name: "Christy Thoresen",
+    name: "Christy",
+    color: "rgb(206, 67, 18)",
     link: "/portrait/models",
     portraitImages: [
       {
@@ -207,6 +211,76 @@ const imageData: {
 
       {
         url: "https://lh3.googleusercontent.com/pw/AL9nZEU6TtM_4do56K4cTGY0xm2Bc5pnrRsGqTHy7lmCyLyfcOdQa9y94RFnCXsCXmzup666c1BworRWgASylO6w9fU4wbwOEfDBgBNSMGI7ZqQcTCvyCge4B_0kjNXfV1q5SOemGncQiNLmAYpMUUER9xc9=w1622-h1080-no?authuser=0",
+        class: "img11",
+      },
+    ],
+  },
+  {
+    name: "Kenya",
+    color: "rgb(137, 09, 13)",
+    link: "/portrait/models",
+    portraitImages: [
+      {
+        url: "https://lh3.googleusercontent.com/pw/AL9nZEUPBbC65IC6Tls86vX_H_guBrWXuvTNQKDoYz7BC8qzR401SpXomNMA4I76QwZvRV4Pr2-8CT6g71oLSMF3QQb0XAYe7XUGblZw_RPGOC8pzqlRY5a4jK65gyKQn5fG8-VsvIIJrANAazpGFlwNdSFq=w2256-h3384-no?authuser=0",
+        class: "img1",
+      },
+      {
+        url: "https://lh3.googleusercontent.com/pw/AL9nZEUtFWLsLnMMUWBSQHTfCVrqn8tSRTbsg3Aq1ABXmTeV_G-16ut-2RjsZqJVeqttVKaA2B-Jx9KScp4oFZR1pWSSR_WzZbjytnkzNyAFSxlpAzp4mTn913xgArpyl_QLeO4XCRwJM2aymtYl7Jqh-otq=w5076-h3384-no?authuser=0",
+        class: "img2",
+      },
+      {
+        url: "https://lh3.googleusercontent.com/pw/AL9nZEWdZHRl7TKfnI9RyBAw-xIdO63DcctMjo_t9NbXCJX-L7kp76X67_lT5CMlmDmOFK9DRMQqSHIj9XkocaVAUFbvtv9WIoQxk5exSVFeaOjFv52Pj8UCQWiq7Uvluftdgh5yhM2eaqidl4CI_H3RBA2S=w5076-h3384-no?authuser=0",
+        class: "img3",
+      },
+      {
+        url: "https://lh3.googleusercontent.com/pw/AL9nZEUVxtP4u4ViNw7hCEKnS7TLNW7ypPbA2xqP8wVt8ckup9O63JSpiqGJFwTJcDit1acIHksIIv2G-2Ohl0GtC13u01sXpf1BttrOy4aCb6HO_4f9j1LFoZeujmW6F1sWpV3ebBzmLFvY4nK7If3UjbN2=w5076-h3384-no?authuser=0",
+        class: "img4",
+      },
+    ],
+    imageData: [
+      {
+        url: "https://lh3.googleusercontent.com/pw/AL9nZEUn-lGmxqRJIeWOHY68fAOno1_AbvAu69IIt7DHlqkvKJ614BVnmJwrIaG8_vw2Dm4XGUbIEqNsAzBuIG6-BeHai3TyrrlzcXhmgx_DWTU4Z-rC5olIQ-qXqMV93iDe1GbKaMe0lj8edvETGymtUH5n=w5076-h3384-no?authuser=0",
+        class: "img1",
+      },
+      {
+        url: "https://lh3.googleusercontent.com/pw/AL9nZEXumZ38jZqaEzC_pDsqQb7iyXiyNe_B_0Pm-hWVwMpy2oE4AbcXr4v9OihU2nSgHotam7pIL9q2uFqNK4basJ9B2cKdng86CqMNQvp9vsRx23j_NtFr1Bk2UIoKWexttjwQYZE_JqCh9luH72uw1K1-=w5076-h3384-no?authuser=0",
+        class: "img2",
+      },
+      {
+        url: "https://lh3.googleusercontent.com/pw/AL9nZEXq99-qwWkP5GvhSMqlYJUkBGVpxKW2LLLJn57GzH_aKs3b4GZ63VI04z60xBh5OxR7xlxgUb-44YhyAQDSeUsxDoXpYYN2IsteEyFlUk823pKUcpXRB1s1Z6uaZoDbSOEroPoHlfgvuA5AOlWBvq6g=w2256-h3384-no?authuser=0",
+        class: "img3",
+      },
+      {
+        url: "https://lh3.googleusercontent.com/pw/AL9nZEUtFWLsLnMMUWBSQHTfCVrqn8tSRTbsg3Aq1ABXmTeV_G-16ut-2RjsZqJVeqttVKaA2B-Jx9KScp4oFZR1pWSSR_WzZbjytnkzNyAFSxlpAzp4mTn913xgArpyl_QLeO4XCRwJM2aymtYl7Jqh-otq=w5076-h3384-no?authuser=0",
+        class: "img4",
+      },
+      {
+        url: "https://lh3.googleusercontent.com/pw/AL9nZEUdHBjA7LVEOdQT-KFF0ncvUJ9Z2_iIV38VlAyQMra79kc3HdXEm6SXD9xkcDZ7KUXCU0h_UJM7XdoQyWfJKAZfo3LKIzAMnBu_IINTmTVlj4Hrlx59X1KCKe9ga7VZemKPfzCVVrpDNiv7PC6IZHm2=w5076-h3384-no?authuser=0",
+        class: "img5",
+      },
+      {
+        url: "https://lh3.googleusercontent.com/pw/AL9nZEUQAvnq7LyZ-yu4iF-IXxHOromNj_unbHADlOmcAnRIMaAAN3IT4Q2cy_6slAmhm9hzLTPW8RlRV2fkYrTIbuCHHZQR6ms_QbdHrlCHdnmGMajMF-x1j4gWquljli9arojX4fBFTeOx6jAq5YGZ0vjX=w2256-h3384-no?authuser=0",
+        class: "img6",
+      },
+      {
+        url: "https://lh3.googleusercontent.com/pw/AL9nZEXj650yzxHB3iDe84lB1Gww7KCm0lPs_xUbJ94yIWLSlLZGb0d6OvmDoZluiWO2ocy6UhqALHQruRsU5MSDLQCrt0kJPejDDdtVvER7R6kyqhliC_kl94SDjydxJrqWuh3DT1e9cqE7PzemAO9FrCx7=w5076-h3384-no?authuser=0",
+        class: "img7",
+      },
+      {
+        url: "https://lh3.googleusercontent.com/pw/AL9nZEUALkL3rUihsHx39C30DjNZyfTQFyLh_jGYHyrceC-h9R5XrmtmmfwPRlFH8IJZSQaXjOHxF9aV4UfSrHLFyP54UJ5o6jhMD-KGzew6WDOTb5rNwmZBCqR4uKp7u_lpysneXxI-l54SVW_Z7K9W3oZ_=w5076-h3384-no?authuser=0",
+        class: "img8",
+      },
+      {
+        url: "https://lh3.googleusercontent.com/pw/AL9nZEVgm16fxsXHTTdgIslHFtoDSu_d_qMKFuZM7-wMMPJM-WnkHHw5rx-dS3vu7OJXM1cBt-VSp6T1cgYzU3GRFkM9yOwTtd2rtz8NhZpYu6ryI_Onx3D-zogGQHkTnQh2hdQ_WW-5ztMLALVmEr382QGn=w5076-h3384-no?authuser=0",
+        class: "img9",
+      },
+      {
+        url: "https://lh3.googleusercontent.com/pw/AL9nZEWsiLkgg0uuMxQupZF-RSKrZMFRR3CKE7lTRp_fhWLeHiCkDEic1yXteespbv5qFwFs8pYd88cyJJNyaT7z0kliMb5DAlOwOeQC-UNz7HLOezvU2A65iSeDjHVzLMoh99ysFKsDA0AsjADn_bS0fbJa=w5076-h3384-no?authuser=0",
+        class: "img10",
+      },
+
+      {
+        url: "https://lh3.googleusercontent.com/pw/AL9nZEUD_VNsrU10M-XTiO5gQbt3d_9XegRqGLgxqb2Mz6d10KoxOjnlpyKl4Lj6yaVodskB8Wqx-lbj4EGmaV0KrYqSJD2z54T_op2_WESS3J_SDMKFPT9QRoppTMg1CiMMDiymUCrdIqOO08MywVS6zg1-=w5076-h3384-no?authuser=0",
         class: "img11",
       },
     ],
