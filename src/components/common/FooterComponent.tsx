@@ -8,9 +8,13 @@ const FooterComponent = () => {
     <>
       <div className="container">
         <div className="logo-container">
-          <BetsyLogo />
+          <BetsyLogo color="grey" />
         </div>
         <div className="text-container">
+          <div className="icon-container">
+            <FaFacebookSquare style={{ fontSize: "1.5rem", color: "#fff" }} />
+            <GrInstagram style={{ fontSize: "1.5rem", color: "#fff" }} />
+          </div>
           <div>
             <h1 className="header">Image Chronicles Studios</h1>
             <h1 className="header">By Betsy Photography</h1>
@@ -18,16 +22,12 @@ const FooterComponent = () => {
             <p className="header">E-mail: betsyvianca@hotmail.com</p>
             <p className="header">Follow me at Facebook and Instagram:</p>
           </div>
-          <div className="icon-container">
-            <FaFacebookSquare style={{ fontSize: "3rem", color: "blue" }} />
-            <GrInstagram style={{ fontSize: "3rem", color: "purple" }} />
-          </div>
         </div>
       </div>
       <style jsx>
         {`
           .container {
-            background: lightgrey;
+            background: rgb(30, 30, 30);
             padding: 0;
             display: grid;
             grid-template-columns: 1fr;
@@ -38,14 +38,14 @@ const FooterComponent = () => {
           }
           .header {
             font-weight: 300;
-            font-size: 1rem;
-            font-style: italic;
+            font-size: 0.8rem;
+            color: #999;
           }
           .icon-container {
-            width: 8rem;
+            width: 4rem;
             display: flex;
             justify-content: space-between;
-            padding-top: 2rem;
+            padding-bottom: 2rem;
           }
           .logo-container {
           }

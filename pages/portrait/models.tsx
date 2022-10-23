@@ -24,7 +24,7 @@ const Modelpage = ({ model }: modelProps) => {
           <meta name="description" content="Images" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <BetsyLogo />
+        <BetsyLogo color="darkgrey" />
         <HeaderComponent />
         <PersonInfoComponent name={model} />
         <ImagesDisplay data={model} />

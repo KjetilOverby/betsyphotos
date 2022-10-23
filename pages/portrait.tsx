@@ -16,7 +16,7 @@ const Portrait = ({ setModelName }: PortraitProps) => {
   return (
     <>
       <div className="global-container">
-        <BetsyLogo />
+        <BetsyLogo color="darkgrey" />
         <HeaderComponent />
         {imageData.map((item) => {
           return (

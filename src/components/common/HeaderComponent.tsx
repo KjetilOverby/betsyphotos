@@ -97,6 +97,7 @@ const HeaderComponent = () => {
           .tab {
             font-weight: 300;
             transition: 0.2s;
+            color: rgb(59, 59, 59);
           }
           .tab:hover {
             cursor: pointer;

@@ -6,7 +6,7 @@ const imageData: {
   color: string;
 }[] = [
   {
-    name: "Jasper",
+    name: "Jasper Ramos",
     color: "rgb(144, 65, 84)",
     link: "/portrait/models",
     portraitImages: [
@@ -76,7 +76,7 @@ const imageData: {
     ],
   },
   {
-    name: "Charisse",
+    name: "Charisse Anne",
     color: "rgb(0, 128, 140)",
     link: "/portrait/models",
     portraitImages: [
