@@ -4,6 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 /* font-family: "Cinzel", serif; */
 
+:root {
+  --primary: rgb(65, 65, 65);
+  --text:  rgb(151, 151, 151);
+}
 
 html,
 body {

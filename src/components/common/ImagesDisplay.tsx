@@ -89,7 +89,7 @@ const ImagesDisplay = ({ data }: any) => {
               "img9 img9 img10 img6 img8"
               "img9 img9 img10 img6 img11";
          
-            padding: 1rem 0;
+            padding: .5rem 0;
             gap: .5rem
           }
           .img-container {

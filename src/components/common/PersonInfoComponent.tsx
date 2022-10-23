@@ -18,7 +18,7 @@ const PersonInfoComponent = ({ name }: NameProps) => {
         {`
           .container {
             margin-top: 5rem;
-            background: ${name.color};
+            background: var(--primary);
             width: 100vw;
           }
           .content-container {
@@ -31,7 +31,7 @@ const PersonInfoComponent = ({ name }: NameProps) => {
           .name {
             font-family: "Cinzel", serif;
             font-size: 6rem;
-            color: #fff;
+            color: var(--text);
             margin-left: 2rem;
           }
           @media only screen and (max-width: 2100px) {

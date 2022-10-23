@@ -1,6 +1,7 @@
 import React from "react";
 import { FaFacebookSquare } from "react-icons/fa";
 import { GrInstagram } from "react-icons/gr";
+import { BsTwitter } from "react-icons/bs";
 import BetsyLogo from "./BetsyLogo";
 
 const FooterComponent = () => {
@@ -14,27 +15,31 @@ const FooterComponent = () => {
           <div className="icon-container">
             <FaFacebookSquare style={{ fontSize: "1.5rem", color: "#fff" }} />
             <GrInstagram style={{ fontSize: "1.5rem", color: "#fff" }} />
+            <BsTwitter style={{ fontSize: "1.5rem", color: "#fff" }} />
           </div>
           <div>
             <h1 className="header">Image Chronicles Studios</h1>
             <h1 className="header">By Betsy Photography</h1>
             <p className="header">2270 Flisa, Norway</p>
             <p className="header">E-mail: betsyvianca@hotmail.com</p>
-            <p className="header">Follow me at Facebook and Instagram:</p>
+            <p className="header">Phone: +47 911 94 405 </p>
+            <p className="header mt">
+              Copyright © 2022 Betsy Photography. All rights reserved.
+            </p>
           </div>
         </div>
       </div>
       <style jsx>
         {`
           .container {
-            background: rgb(30, 30, 30);
+            background: var(--primary);
             padding: 0;
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 5rem 1fr;
             width: 100vw;
-            padding-top: 1.5rem;
-            padding-bottom: 1.5rem;
+            padding-top: 3rem;
+            padding-bottom: 5rem;
           }
           .header {
             font-weight: 300;
@@ -42,7 +47,7 @@ const FooterComponent = () => {
             color: #999;
           }
           .icon-container {
-            width: 4rem;
+            width: 10rem;
             display: flex;
             justify-content: space-between;
             padding-bottom: 2rem;
