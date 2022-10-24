@@ -14,16 +14,16 @@ interface PortraitProps {
 }
 
 const Portrait = ({ setModelName }: PortraitProps) => {
-  const [names, setNames] = useState<string[]>(
-    imageData.map((item) => item.name)
-  );
+  const [openSearch, setOpenSearch] = useState(false);
   return (
     <>
-      {/* <SearchModal names={names} /> */}
+      {openSearch && <SearchModal close={setOpenSearch} names={imageData} />}
       <div className="global-container">
         <BetsyLogo color="darkgrey" />
         <HeaderComponent />
-        <p className="search-btn">Søk</p>
+        <p onClick={() => setOpenSearch(true)} className="search-btn">
+          Søk
+        </p>
         {imageData.map((item) => {
           return (
             <>
