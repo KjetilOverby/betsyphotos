@@ -5,6 +5,7 @@
 /* font-family: "Cinzel", serif; */
 
 :root {
+  --background: rgb(239, 239, 239);
   --primary: rgb(65, 65, 65);
   --text:  rgb(151, 151, 151);
 }

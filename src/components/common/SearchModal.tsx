@@ -10,34 +10,49 @@ interface DataProps {
     color: string;
   }[];
   close: (value: boolean) => void;
+  onChange: (e: any) => void;
+  setInput: React.Dispatch<React.SetStateAction<string>>;
+  setOpenSearch: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-function SearchModal({ names, close }: DataProps) {
+function SearchModal({
+  names,
+  close,
+  onChange,
+  setInput,
+  setOpenSearch,
+}: DataProps) {
   return (
     <>
       <div className="container">
-        <h4 className="header">Search</h4>
+        <p onClick={() => close(false)} className="close">
+          Close
+        </p>
 
         <input
+          onChange={onChange}
           style={{
             borderRadius: "5px",
             outline: "none",
             border: "none",
             background: "var(--text",
             padding: ".3rem",
+            fontSize: "1rem",
+            color: "#fff",
           }}
           className="input mt"
-          type="text"
-          placeholder="search"
+          type="search"
+          placeholder="search..."
         />
-        <p onClick={() => close(false)} className="close">
-          Close
-        </p>
         <div className="names-container mt">
           {names.map((item: any) => {
+            const pickPerson = () => {
+              setInput(item.name);
+              setOpenSearch(false);
+            };
             return (
               <>
-                <div className="name-img-container">
+                <div onClick={pickPerson} className="name-img-container">
                   <div className="circle">
                     <div className="image-container">
                       <Image
@@ -66,7 +81,7 @@ function SearchModal({ names, close }: DataProps) {
             left: 0rem;
             width: 20rem;
             height: auto;
-            background: lightgrey;
+            background: var(--background);
             z-index: 5000;
             padding: 1rem;
             padding: 2rem;
@@ -101,13 +116,13 @@ function SearchModal({ names, close }: DataProps) {
             grid-template-columns: 4rem 1fr;
             align-items: center;
             margin-bottom: 1rem;
-            transition: .3s
+            transition: 0.3s;
           }
           .name-img-container:hover {
             cursor: pointer;
             background: grey;
             border-radius: 50px;
-            width: 50rem
+          }
           .names {
             color: var(--text);
             font-weight: 300;
@@ -119,7 +134,12 @@ function SearchModal({ names, close }: DataProps) {
             grid-template-rows: 1fr 1fr 1fr 1fr;
             height: auto;
           }
-          
+
+          @media only screen and (max-width: 756px) {
+            .cokntainer {
+              width: 100vw;
+            }
+          }
         `}
       </style>
     </>
