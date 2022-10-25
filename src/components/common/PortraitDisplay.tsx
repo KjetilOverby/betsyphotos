@@ -181,7 +181,7 @@ const PortraitDisplay = ({
                 "img2 img3"
                 "img4 img4";
               margin-top: 0;
-              margin-bottom: -5rem;
+              margin-bottom: -10.2rem;
             }
             .header {
               font-size: 1.5rem;

@@ -66,12 +66,16 @@ const FooterComponent = () => {
             margin: 0 48rem;
             text-align: center;
           }
-          @media only screen and (max-width: 756px) {
+          @media only screen and (max-width: 1000px) {
             .container {
               width: 100vw;
             }
             .text-container {
               margin: 0;
+            }
+          }
+          @media only screen and (max-width: 756px) {
+            .container {
             }
           }
         `}

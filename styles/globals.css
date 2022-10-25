@@ -75,8 +75,8 @@ a {
   background-color: rgb(239, 239, 239);
   position: relative;
 }
-@media only screen and (max-width: 600px) {
- 
+@media only screen and (max-width: 756px) {
+   
 }
 
 @media (prefers-color-scheme: dark) {

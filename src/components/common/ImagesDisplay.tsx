@@ -88,9 +88,9 @@ const ImagesDisplay = ({ data }: any) => {
               "img4 img4 img3 img6 img7"
               "img9 img9 img10 img6 img8"
               "img9 img9 img10 img6 img11";
-         
-            padding: .5rem 0;
-            gap: .5rem
+
+            padding: 0.5rem 0;
+            gap: 0.5rem;
           }
           .img-container {
             position: relative;
@@ -138,9 +138,9 @@ const ImagesDisplay = ({ data }: any) => {
           }
           @media only screen and (max-width: 756px) {
             .container {
-              padding: 1rem 0rem;
+              padding: 0 0rem;
               grid-template-columns: 1fr;
-              grid-template-rows: 20rem 20rem 40rem 20rem 40rem 20rem 20rem 20rem 20rem 20rem 20rem 20rem;
+              grid-template-rows: 20rem 20rem 40rem 20rem 40rem 20rem 20rem 20rem 20rem 20rem 20rem 25rem;
               height: auto;
               grid-template-areas:
                 "img1"
@@ -154,9 +154,9 @@ const ImagesDisplay = ({ data }: any) => {
                 "img9"
                 "img10"
                 "img11"
-                "img12"
+                "img12";
             }
-          }mg9 img10 img6 img12
+          }
         `}
       </style>
     </>
