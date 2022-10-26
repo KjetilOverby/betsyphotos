@@ -285,6 +285,76 @@ const imageData: {
       },
     ],
   },
+  {
+    name: "Gemma",
+    color: "rgb(137, 09, 13)",
+    link: "/portrait/models",
+    portraitImages: [
+      {
+        url: "https://lh3.googleusercontent.com/pw/AL9nZEU6YYqz-KOYzFEDv2CDxpnLu_66IGdXkDtPeeIjdb87AZCG-CPv5KMRX5eLpAXZTBOASrOfnhP-9LLOdtKSYvShUVxX_qSCL7bpFRNbJC_0k38j5yOcedg8O4jrQjSJj0ZSpPvQi0Wa751orm_EvJS-=w719-h1080-no?authuser=0",
+        class: "img1",
+      },
+      {
+        url: "https://lh3.googleusercontent.com/pw/AL9nZEW1qvCaM-8h6w1LK2bDc_WBpBfuYjhfBe0zmZCU4YRGcHeVV7AKBrvZGqT3SCa1rrldsj-mUOFQcX9sP1MPjdAd0b9ZpL-yayCin8o5Pvh7XL8nxVn-xle1iDeOzr4Uo8LAWjDxDQ_KJEtY-_0m2h91=w1280-h852-no?authuser=0",
+        class: "img2",
+      },
+      {
+        url: "https://lh3.googleusercontent.com/pw/AL9nZEWXvZjdtn0w869mHiP9BiQVD1h8wCT1r-dzn4z6csCR5gAh-PYma6BkHdCxcfnZ5ZV3IZEJ1NrYGkowcEFNsrGj8trnpM4g7jzq91PCbQ8MsNbbW1djhyXYbDrJnh7RN33H-1o2fxbeOU6-bWuzwPO7=w1280-h853-no?authuser=0",
+        class: "img3",
+      },
+      {
+        url: "https://lh3.googleusercontent.com/pw/AL9nZEWfDkB7C336unR8kTvgSpb7aNSbhSaavvuFqgjW5XKlAiJbN8NfX71pV67RZODoz8JqKPXSJtAZiOa8C5Hn0LoyPc9DCDxCKP5EoXs8nJPveD4xqUCspgWoLvKAErsd98LG2UswLXoCeLvsSpTrbzxp=w1280-h910-no?authuser=0",
+        class: "img4",
+      },
+    ],
+    imageData: [
+      {
+        url: "https://lh3.googleusercontent.com/pw/AL9nZEUncKKHiOWO0WSKRs6IUcLOnFq5AX3r_gLdvbXmFhyvpXCIm608mE5DzLwGinNo_HFbdHrBkt8mawY_ks6deCryfcHHR1DWVqa6YG1FztCoonKSI_hJDTeRF7ctczk2Ejnfoc5gVKL5MbkuR0GM-5A7=w1280-h852-no?authuser=0",
+        class: "img1",
+      },
+      {
+        url: "https://lh3.googleusercontent.com/pw/AL9nZEVtg_EPdVIGpfFbIzpiPY8eMlQDWDE7RDvJjQgcIYWAkSvXPYpWMcChjX4vlSxhomkah-OLahsXb__kAwX6x1FSPw-YWlttufC9COvVBQOQi2oaaqqrxcJvMnB9DNUOht9emjcz3GnVO1wPmsWguAtx=w1620-h1080-no?authuser=0",
+        class: "img2",
+      },
+      {
+        url: "https://lh3.googleusercontent.com/pw/AL9nZEXlU0rYRliEd_ukjZq4TNxibnoHKGXMK0iV7qJYMuY8OO3QCWMsc4xbqdhgrYO4fR2rXD31fgaKGLJQsQfRtNhxYbWdsp0vsPN_mbdFgTKXzXGW4ILmiEXdRnArA9FCaqHSQ8w5U8akG5RVCcUDXUJB=w720-h1080-no?authuser=0",
+        class: "img3",
+      },
+      {
+        url: "https://lh3.googleusercontent.com/pw/AL9nZEUxe4TtH2OruBNKB9owGNYipmOp4T-WKuh8lZ4OU8d3bQpDekU4V1RtWMjAAjBph9KLP4Tyru69nctoWSMQyigLAO7z4VuUWeFEaHLwrYYsiZJ-H-TgxirSrcfk3eiNmW9fMLXatIaQfrK3LZUbQgQf=w1280-h852-no?authuser=0",
+        class: "img4",
+      },
+      {
+        url: "https://lh3.googleusercontent.com/pw/AL9nZEVmPyVZt13UMvt2DYK8PlMtXKFhkO49UpVRsEIldpJPsoxBBZ-8ATpwt3jGrx2JT9opA0qfC09ERpej4hzvZnh_K15DXjlqRg4La1GtNOTYgqkPBF4aUfeVmeLmL4SDgniw5VSe110vK0QnIXjLlZxY=w1620-h1080-no?authuser=0",
+        class: "img5",
+      },
+      {
+        url: "https://lh3.googleusercontent.com/pw/AL9nZEVOZwC6JpSk1v3zOGHczSUjJ51LuHbD4ClqQSl1FvWr3VSETLaSa-L8lDQYual_IAGedmMgWXL5B7-KyFYBOiFDJOwZMeTcNpj-p7tfpUrE2uIQfLfA0siUVA6vdFs5tRjmZphH-gOg6EXpcaBLUEW4=w720-h1080-no?authuser=0",
+        class: "img6",
+      },
+      {
+        url: "https://lh3.googleusercontent.com/pw/AL9nZEURAIwXH-RwSmezGrIesIIwxjCMwN2LjH0_-IZIrB1ipWTvjS0ZoCPDiYI3P39FX2UQQRJnxuJvlBw3qq84KhjrkuGJ4R7N6XukzQoGbpfpluLGmsAToxqbsCAqW-Zt-pBwYE-POz5pR-RKnW4xvt1i=w1620-h1080-no?authuser=0",
+        class: "img7",
+      },
+      {
+        url: "https://lh3.googleusercontent.com/pw/AL9nZEWXvZjdtn0w869mHiP9BiQVD1h8wCT1r-dzn4z6csCR5gAh-PYma6BkHdCxcfnZ5ZV3IZEJ1NrYGkowcEFNsrGj8trnpM4g7jzq91PCbQ8MsNbbW1djhyXYbDrJnh7RN33H-1o2fxbeOU6-bWuzwPO7=w1280-h853-no?authuser=0",
+        class: "img8",
+      },
+      {
+        url: "https://lh3.googleusercontent.com/pw/AL9nZEUVdjYnzi9-Er2NcfbJyqS4GKEDvwBXEy2hhgyOPRD27RHxBJyphAfNqMTf9njdiPNbEG335_KUCFtv2cggTGWXL1XyAQKhMoy96sVJquSOoW7kKcghrC_KfpBW4O04UrhQ-fUxkePSRvZurpkteuSM=w1620-h1080-no?authuser=0",
+        class: "img9",
+      },
+      {
+        url: "https://lh3.googleusercontent.com/pw/AL9nZEU6mIN7qLoxWy2uiC3gdecULLpFpjKAMD26kCYqxM-DqTXg6kXTA1WM0xkbAW68IruZBcGC8mor3ZMFO2EyB7U1nzGHJhO_J7m2RZPUJgxYxaGkT1F4Sd-qppKT48RhcQSy0CuwLoDcOON3Ikr4yxsl=w1280-h785-no?authuser=0",
+        class: "img10",
+      },
+
+      {
+        url: "https://lh3.googleusercontent.com/pw/AL9nZEU7wgfVNCZSTnNAu6gEKZntTIGyjIQiiErJ4PwcWasdQUMjf121P9FNHQeYRPckXHeYogTym3kOxYEE3pjQ7nzODruUndVP_waChJx4oEFS3sINH04htNz5D7m1J9N6namkeqQB67PgBT9fAzCgKasB=w1620-h1080-no?authuser=0",
+        class: "img11",
+      },
+    ],
+  },
 ];
 
 export default imageData;
