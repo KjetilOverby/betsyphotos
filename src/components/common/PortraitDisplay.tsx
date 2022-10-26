@@ -3,6 +3,7 @@ import Image from "next/image";
 import Hidden from "./Hidden";
 import Link from "next/link";
 import ChroniclesMark from "./ChroniclesMark";
+import { useMediaQuery } from "react-responsive";
 
 interface ImgProps {
   name: string;
@@ -23,29 +24,27 @@ const PortraitDisplay = ({
   link,
   func,
 }: ImgProps) => {
+  const mediumUp = useMediaQuery({ query: `(min-width: 1200px)` });
   return (
     <>
       <div className="container">
         <h1 className="header">{name}</h1>
-        <Hidden size="small-down">
+        {mediumUp && (
           <div className="img1">
             <Image
-              layout="intrinsic"
-              height="1020"
-              width="700"
-              objectFit="fill"
+              layout="fill"
+              objectFit="cover"
               loader={() => img1}
               src={img1}
               unoptimized={true}
               alt=""
             />
           </div>
-        </Hidden>
+        )}
+
         <div className="img2">
           <Image
-            layout="responsive"
-            height="49"
-            width="70"
+            layout="fill"
             objectFit="cover"
             loader={() => img2}
             src={img2}
@@ -55,9 +54,7 @@ const PortraitDisplay = ({
         </div>
         <div className="img3">
           <Image
-            layout="responsive"
-            height="49"
-            width="70"
+            layout="fill"
             objectFit="cover"
             loader={() => img3}
             src={img3}
@@ -67,9 +64,7 @@ const PortraitDisplay = ({
         </div>
         <div className="img4">
           <Image
-            layout="responsive"
-            height="49"
-            width="70"
+            layout="fill"
             objectFit="cover"
             loader={() => img4}
             src={img4}
@@ -99,6 +94,8 @@ const PortraitDisplay = ({
             margin-top: 7rem;
             margin-bottom: 5rem;
             overflow: hidden;
+            height: 80rem;
+            width: 60%;
           }
           .header {
             grid-area: head;
@@ -109,14 +106,17 @@ const PortraitDisplay = ({
           .img1 {
             grid-area: img1;
             overflow: hidden;
+            position: relative;
           }
           .img2 {
             grid-area: img2;
             overflow: hidden;
+            position: relative;
           }
           .img3 {
             grid-area: img3;
             overflow: hidden;
+            position: relative;
           }
           .img4 {
             grid-area: img4;
@@ -143,33 +143,8 @@ const PortraitDisplay = ({
             .header {
               font-size: 2rem;
             }
-            .link {
-            }
           }
-          @media only screen and (max-width: 1778px) {
-            .container {
-              width: 60%;
-              grid-template-columns: 30rem 1fr 1fr;
-              grid-template-rows: 3rem 12rem 1fr;
-              height: 40rem;
-            }
-          }
-          @media only screen and (max-width: 1704px) {
-            .container {
-              width: 60%;
-              grid-template-columns: 26rem 1fr 1fr;
-              grid-template-rows: 3rem 12rem 1fr;
-              height: 40rem;
-            }
-          }
-          @media only screen and (max-width: 1598px) {
-            .container {
-              width: 60%;
-              grid-template-columns: 1fr 15rem 15rem;
-              grid-template-rows: 3rem 12rem 1fr;
-              height: 40rem;
-            }
-          }
+
           @media only screen and (max-width: 756px) {
             .container {
               width: 100vw;
@@ -180,15 +155,15 @@ const PortraitDisplay = ({
                 "head head"
                 "img2 img3"
                 "img4 img4";
-              margin-top: 0;
-              margin-bottom: -10.2rem;
+              margin-top: 5rem;
+              margin-bottom: 0.5rem;
             }
             .header {
               font-size: 1.5rem;
               margin-left: 0.5rem;
             }
             .link {
-              bottom: 12rem;
+              bottom: 0rem;
             }
           }
         `}

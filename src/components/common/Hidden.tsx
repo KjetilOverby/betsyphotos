@@ -30,7 +30,7 @@ const Hidden = ({ children, size }: Props) => {
     } else if (size === "large-up") {
       setSizeDetect(largeUp);
     }
-  }, [small, medium, large, smallUp, mediumUp, largeUp, size]);
+  }, [small, medium, large, smallUp, mediumUp, largeUp, size, sizeDetect]);
   return <div>{sizeDetect && children}</div>;
 };
 export default Hidden;
