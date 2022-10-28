@@ -5,7 +5,7 @@ import Link from "next/link";
 const nature =
   "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80";
 const portrait =
-  "https://images.unsplash.com/photo-1531518326825-96490ddf2a89?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80";
+  "https://lh3.googleusercontent.com/pw/AL9nZEVol13oYrwxPLDjblYdzmnkuOI6RZbzY3HMgtviqr7Y753Z1xQ9Y7p_9VXaXYiuowTZYRJXVZ5rwDG6_kgMOnVb7XTwBlrTfmDc6ac2m3a4IrhvZOQM3leRE-TA95liP8_1oJRsqISWhvBefVI2gDxl=w720-h1080-no?authuser=0";
 
 const conceptual =
   "https://images.unsplash.com/photo-1579639255174-c4dc7ae73c02?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80";

@@ -6,6 +6,7 @@ import FooterComponent from "../src/components/common/FooterComponent";
 import HeaderComponent from "../src/components/common/HeaderComponent";
 import ImageComponent from "../src/components/startpage/ImageComponent";
 import ImageHeader from "../src/components/startpage/ImageHeader";
+import StartPageSection from "../src/components/startpage/StartPageSection";
 import styles from "../styles/Home.module.css";
 
 const fbLogo = "/fbLogo.jpeg";
@@ -40,6 +41,7 @@ const Home: NextPage = () => {
         </ImageHeader>
         <ImageComponent />
       </div>
+      <StartPageSection />
       <FooterComponent />
     </div>
   );
