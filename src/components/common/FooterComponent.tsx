@@ -63,7 +63,7 @@ const FooterComponent = () => {
             place-items: center;
             padding-top: 1.5rem;
             grid-template-columns: 1fr;
-            margin: 0 48rem;
+
             text-align: center;
           }
           @media only screen and (max-width: 1000px) {

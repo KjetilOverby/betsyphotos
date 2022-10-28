@@ -30,7 +30,7 @@ const PersonInfoComponent = ({ name }: NameProps) => {
 
           .name {
             font-family: "Cinzel", serif;
-            font-size: 6rem;
+            font-size: 4rem;
             color: var(--text);
             margin-left: 2rem;
           }

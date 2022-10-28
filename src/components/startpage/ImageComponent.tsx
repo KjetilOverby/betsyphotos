@@ -64,7 +64,7 @@ const ImageComponent = () => {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-gap: 2rem;
-            margin: 5rem 42rem;
+            margin: -15% 18% 1rem 18%;
             width: 100%;
           }
           .img {
@@ -98,12 +98,10 @@ const ImageComponent = () => {
 
           @media only screen and (max-width: 2100px) {
             .container {
-              margin: 5rem 25rem;
             }
           }
           @media only screen and (max-width: 2000px) {
             .container {
-              margin: 5rem 24rem;
             }
           }
           @media only screen and (max-width: 756px) {
