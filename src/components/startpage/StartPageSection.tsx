@@ -57,6 +57,12 @@ const StartPageSection = () => {
             font-weight: 200;
             color: dvar(--primary);
           }
+          @media only screen and (max-width: 756px) {
+            .container {
+              grid-template-columns: 1fr;
+              margin: 10% 2% 0% 2%;
+            }
+          }
         `}
       </style>
     </>
