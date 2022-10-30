@@ -1,19 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import BetsyLogo from "../src/components/common/BetsyLogo";
-import FooterComponent from "../src/components/common/FooterComponent";
 import HeaderComponent from "../src/components/common/HeaderComponent";
 import PortraitDisplay from "../src/components/common/PortraitDisplay";
-import jasperData from "../src/imagesdata/jasper";
-import charisseData from "../src/imagesdata/charisseData";
-import christyData from "../src/imagesdata/christy";
-import imageData from "../src/imagesdata/imagedata";
 import SearchModal from "../src/components/common/SearchModal";
+import natureData from "../src/imagesdata/natureData";
 
 interface PortraitProps {
   setModelName: (modelName: string) => void;
 }
 
-const Portrait = ({ setModelName }: PortraitProps) => {
+const Nature = ({ setModelName }: PortraitProps) => {
   const [openSearch, setOpenSearch] = useState(false);
   const [input, setInput] = useState("");
   const [searchResult, setSearchResult] = useState<any[]>([]);
@@ -24,7 +20,7 @@ const Portrait = ({ setModelName }: PortraitProps) => {
 
   useEffect(
     () =>
-      setSearchResult(imageData.filter((item) => item.name.includes(input))),
+      setSearchResult(natureData.filter((item) => item.name.includes(input))),
     [input]
   );
 
@@ -32,7 +28,6 @@ const Portrait = ({ setModelName }: PortraitProps) => {
     setInput("");
     setOpenSearch(true);
   };
-
   return (
     <>
       {openSearch && (
@@ -45,13 +40,14 @@ const Portrait = ({ setModelName }: PortraitProps) => {
         />
       )}
       <div className="global-container">
-        <BetsyLogo color="darkgrey" />
+        <BetsyLogo color="var(--text)" />
         <HeaderComponent />
         <p onClick={openSearchHandler} className="search-btn">
           Search
         </p>
-        {searchResult &&
-          searchResult.map((item: any) => {
+
+        {natureData &&
+          natureData.map((item) => {
             return (
               <>
                 <PortraitDisplay
@@ -66,8 +62,6 @@ const Portrait = ({ setModelName }: PortraitProps) => {
               </>
             );
           })}
-
-        <FooterComponent />
       </div>
       <style jsx>
         {`
@@ -93,4 +87,4 @@ const Portrait = ({ setModelName }: PortraitProps) => {
   );
 };
 
-export default Portrait;
+export default Nature;

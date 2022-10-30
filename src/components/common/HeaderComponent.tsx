@@ -40,7 +40,7 @@ const HeaderComponent = () => {
               <Link href="/portrait">
                 <p className="tabs-mobile">Portrait</p>
               </Link>
-              <Link href="/">
+              <Link href="/nature">
                 <p className="tabs-mobile">nature</p>
               </Link>
               <Link href="/">
@@ -78,7 +78,9 @@ const HeaderComponent = () => {
             <p className="tab">Portrait</p>
           </Link>
           <p>•</p>
-          <p className="tab">Nature</p>
+          <Link href="/nature">
+            <p className="tab">Nature</p>
+          </Link>
           <p>•</p>
           <p className="tab">Conseptual</p>
           <p>•</p>

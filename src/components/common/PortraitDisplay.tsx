@@ -74,7 +74,7 @@ const PortraitDisplay = ({
           {link && (
             <Link href={`${link}`}>
               <p onClick={func} className="link">
-                <ChroniclesMark />
+                <button className="btn">View more pictures</button>
               </p>
             </Link>
           )}
@@ -82,9 +82,19 @@ const PortraitDisplay = ({
       </div>
       <style jsx>
         {`
+          .btn {
+            padding: 0.5rem;
+            border-radius: 5px;
+            border: none;
+            transition: 0.5s;
+          }
+          .btn:hover {
+            background: lightgrey;
+            cursor: pointer;
+          }
           .container {
             display: grid;
-            grid-template-columns: 1fr 30rem 30rem;
+            grid-template-columns: 1fr 25rem 25rem;
             grid-template-rows: 3.5rem 20rem 1fr;
             grid-template-areas:
               "head head head"
@@ -94,7 +104,7 @@ const PortraitDisplay = ({
             margin-top: 7rem;
             margin-bottom: 5rem;
             overflow: hidden;
-            height: 80rem;
+            height: 65rem;
             width: 60%;
           }
           .header {
