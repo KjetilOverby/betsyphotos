@@ -15,19 +15,21 @@ const ImageComponent = () => {
     <>
       <div className="main-container">
         <div className="container">
-          <div className="img-container">
-            <h1 className="img-header">NATURE</h1>
-            <Image
-              layout="responsive"
-              height="20"
-              width="15"
-              objectFit="cover"
-              loader={() => nature}
-              src={nature}
-              unoptimized={true}
-              alt=""
-            />
-          </div>
+          <Link href="/nature">
+            <div className="img-container">
+              <h1 className="img-header">NATURE</h1>
+              <Image
+                layout="responsive"
+                height="20"
+                width="15"
+                objectFit="cover"
+                loader={() => nature}
+                src={nature}
+                unoptimized={true}
+                alt=""
+              />
+            </div>
+          </Link>
           <Link href="/portrait">
             <div className="img-container">
               <h1 className="img-header">PORTRAIT</h1>

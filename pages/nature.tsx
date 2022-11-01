@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import BetsyLogo from "../src/components/common/BetsyLogo";
+import FooterComponent from "../src/components/common/FooterComponent";
 import HeaderComponent from "../src/components/common/HeaderComponent";
 import PortraitDisplay from "../src/components/common/PortraitDisplay";
 import SearchModal from "../src/components/common/SearchModal";
@@ -46,8 +47,8 @@ const Nature = ({ setModelName }: PortraitProps) => {
           Search
         </p>
 
-        {natureData &&
-          natureData.map((item) => {
+        {searchResult &&
+          searchResult.map((item) => {
             return (
               <>
                 <PortraitDisplay
@@ -62,6 +63,7 @@ const Nature = ({ setModelName }: PortraitProps) => {
               </>
             );
           })}
+        <FooterComponent />
       </div>
       <style jsx>
         {`

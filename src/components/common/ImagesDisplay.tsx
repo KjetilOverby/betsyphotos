@@ -50,10 +50,11 @@ const ImagesDisplay = ({ data }: any) => {
         />
       )}
       <div className="container">
-        {data.imageData.map((item: any) => {
+        {data.imageData.map((item: any, index: number) => {
           const openSingleImgHandler = () => {
             setImgUrl(item.url);
             setOpenSingleImg(true);
+            setImgCount(index);
           };
 
           return (
